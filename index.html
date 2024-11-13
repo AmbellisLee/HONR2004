@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        function randomRedirect() {
+            const pages = [
+                "https://umac.au1.qualtrics.com/jfe/form/SV_6hfVeObMufA5dY2",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_9Ml7KmAKJjaZ1Ay",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_2rzYe6r6N8nvFtk",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_cIxXCWk0qw2JIr4",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_5p7X3KiHMT9GlSK",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_5hgspEBorJkN5eC",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_3mTly9yF4uqjfuK",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_8AZ4WXJ3p7B6mWi",
+                "https://umac.au1.qualtrics.com/jfe/form/SV_87U7o05Mpb5iqCW"
+            ];
+            const randomIndex = Math.floor(Math.random() * pages.length);
+            window.location.href = pages[randomIndex];
+        }
+    </script>
+</head>
+<body onload="randomRedirect()">
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="javascript:randomRedirect()">click here</a>.</p>
+</body>
+</html>
